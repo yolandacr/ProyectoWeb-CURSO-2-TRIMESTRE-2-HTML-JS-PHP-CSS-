@@ -1,20 +1,23 @@
 body {
   font: 400 1em/1.5 "Neuton";
   background: #090d00;
-  color:antiquewhite;
-  text-align:unset;
- 
+  color:rgba(250, 235, 215, 0.788);
+  text-align:center;
+  box-sizing: border-box;
+  height: 100vh;
+  width: 100vw;
 }
 
 #mainHome{
   color: rgba(253, 158, 237, 0.25);
   text-align: center;
-  margin: 0;
-  display: grid;
+  margin-bottom: 10%;
+  
 }
 
 #intro{
 margin:auto;
+
 }
 
 audio::-webkit-media-controls-play-button,
@@ -25,15 +28,17 @@ audio::-webkit-media-controls-play-button,
 #pPrincipal {
   text-transform: uppercase;
   letter-spacing: 0.5em;
-  display: inline-block;
+  /* display: inline-block; */
   border: 4px double rgba(68, 35, 60, 0.25);
   border-width: 4px 0;
   padding: 1.5em 0em;
-  position: absolute;
+  position: fixed;
   top: 18%;
   left: 50%;
   width: 40em;
   margin: 0 0 0 -20em;
+  display:block;
+
 }
 #sPrincipal {
   font: 700 4em/1 "Oswald", sans-serif;
@@ -140,4 +145,25 @@ audio::-webkit-media-controls-play-button,
 
 .fondo-aviso-cookies.activo {
 	display: block;
+}
+
+/* FORMULARIO */
+
+.container{
+color:rgba(202, 95, 181, 0.699);
+position:block;
+top: 58%;
+margin-left:40%;
+}
+
+#formulario{
+  width: 20%; 
+  position:fixed;
+}
+
+.btn-primary {
+  color: #fff;
+  background-color: #8a3b7d9c;
+  border-color: #8a3b7d;
+  margin-bottom: 1%;
 }

@@ -1,0 +1,39 @@
+body {
+  font: 400 1em/1.5 "Neuton";
+  background: #090d00;
+  color:rgba(250, 235, 215, 0.788);
+  text-align:center;
+  box-sizing: border-box;
+  height: 100vh;
+  width: 100vw;
+}
+
+#titulo{
+  margin-top:5%;
+  color: rgba(128, 69, 136, 0.356);
+  text-shadow: 0 0 80px rgba(104, 26, 78, 0.5);
+
+
+}
+
+/* FORMULARIO */
+.container{
+position:block;
+top: 40%; 
+margin-left:40%;
+}
+
+#formulario{
+  width: 20%; 
+  position:fixed;
+}
+
+.btn-primary {
+  color: #fff;
+  background-color: #8a3b7d9c;
+  border-color: #8a3b7d;
+}
+
+span{
+  display:none;
+}

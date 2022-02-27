@@ -41,18 +41,14 @@ span{
   display:none;
 }
 
-@media screen and (orientation: landscape) {
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+  body{
+      max-width: 100vw;
+      max-height: 100vh;
+      overflow-y: auto;
+      overflow-x: hidden;
+  }
   #mainHome{
-    height: 30%;
     font-size: 0.5rem;
-  }
-}
-
-@media screen and (orientation: portrait) {
-  #formulario{
-    height:80%;
-  }
-  .btn btn-primary{
-    width: 80%;
   }
 }

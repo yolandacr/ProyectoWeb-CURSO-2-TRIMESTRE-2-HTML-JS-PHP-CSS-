@@ -12,7 +12,6 @@ body {
   color: rgba(253, 158, 237, 0.25);
   text-align: center;
   margin-bottom: 10%;
-  
 }
 
 #intro{
@@ -38,6 +37,7 @@ audio::-webkit-media-controls-play-button,
   width: 40em;
   margin: 0 0 0 -20em;
   display:block;
+  
 
 }
 #sPrincipal {
@@ -58,6 +58,7 @@ audio::-webkit-media-controls-play-button,
   /* Activate hardware acceleration for smoother animations */
   -webkit-transform: translate3d(0, 0, 0);
   -webkit-backface-visibility: hidden;
+  
 }
 
 /* Animate Background Image */
@@ -166,4 +167,8 @@ margin-left:40%;
   background-color: #8a3b7d9c;
   border-color: #8a3b7d;
   margin-bottom: 1%;
+}
+
+#enlaceReg{
+  margin-top: 8%;
 }

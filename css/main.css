@@ -172,3 +172,14 @@ margin-left:40%;
 #enlaceReg{
   margin-top: 8%;
 }
+
+
+@media screen and (orientation: landscape) {
+  #mainHome{
+    height: 30%;
+    font-size: 0.5rem;
+  }
+
+
+  
+}

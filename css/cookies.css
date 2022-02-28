@@ -1,0 +1,12 @@
+body {
+    font: 400 1em/1.5 "Neuton";
+    background: #090d00;
+    color:rgba(252, 252, 252, 0.938);
+    text-align:justify;
+    box-sizing: border-box;
+    height: 100vh;
+    width: 100vw;
+    margin:0;
+    padding:0;
+    overflow: auto;
+  }

@@ -37,6 +37,7 @@ margin-top: 3vh;
   width: 40em;
   margin: 0 0 0 -20em;
   display:block;
+  z-index: -1;
   
 
 }

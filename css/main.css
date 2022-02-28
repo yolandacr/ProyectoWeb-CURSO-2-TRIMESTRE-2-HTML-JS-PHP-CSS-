@@ -182,11 +182,19 @@ text-transform: uppercase;
       overflow-y: auto;
       overflow-x: hidden;
       font-size: 0.55rem;
+      margin:0;
+      padding:0;
+  }
+
+  #bloquePrincipal{
+    margin-top:2%;
+    position:absolute;
   }
  
   .container{
     top:40%;
     font-size: 1.5rem;
+    position:absolute;
   }
 
   #formulario{
@@ -195,7 +203,7 @@ text-transform: uppercase;
     height:100%;
     margin-left:auto;
     margin-right:auto;
-
+   
   }
  
 }

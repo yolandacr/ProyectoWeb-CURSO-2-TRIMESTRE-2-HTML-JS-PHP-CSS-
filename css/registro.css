@@ -1,7 +1,7 @@
 body {
   font: 400 1em/1.5 "Neuton";
   background: #090d00;
-  color:rgba(250, 235, 215, 0.788);
+  color:rgb(253, 252, 251);
   text-align:center;
   box-sizing: border-box;
   height: 100vh;
@@ -12,9 +12,10 @@ body {
 
 #titulo{
   margin-top:5%;
-  color: rgba(128, 69, 136, 0.356);
-  text-shadow: 0 0 80px rgba(104, 26, 78, 0.5);
-  height:auto;
+  color: rgb(201, 118, 212);
+  text-shadow: 0 0 80px rgba(104, 26, 78, 0.877);
+  height:10%;
+  text-transform: uppercase;
 
 
 }
@@ -24,6 +25,7 @@ body {
 position:block;
 top: 40%; 
 margin-left:40%;
+text-transform: uppercase;
 }
 
 #formulario{
@@ -32,6 +34,7 @@ margin-left:40%;
 }
 
 .btn-primary {
+  text-transform: uppercase;
   color: #fff;
   background-color: #8a3b7d9c;
   border-color: #8a3b7d;

@@ -31,49 +31,52 @@
   <!-- End Google Tag Manager (noscript) -->
 
 
-  <main id="mainHome">
-    <!-- PARTE ESCRITA Y LETRAS -->
-    
-      <p id="pPrincipal">
-        Junio 2022
-        <span id="sPrincipal">
-          Rockola Boomer
-        </span>
-        &mdash; Próximamente &mdash;
-      </p>
-    
+  <header id="mainHome">
+    <!-- REPRODUCTOR MUSICA -->
 
-
-  <!-- REPRODUCTOR MUSICA -->
-  
     <audio id="intro" controls>
       <source src="./musica/intro.mp3" type="audio/mpeg">
       <source src="./musicaintro.wav" type="audio/wav">
       Tu navegador no es compatible con el audio de la web
     </audio>
-  
+
+
+    <!-- PARTE ESCRITA Y LETRAS -->
+    <p id="pPrincipal">
+      Junio 2022
+      <span id="sPrincipal">
+        Rockola Boomer
+      </span>
+      &mdash; Próximamente &mdash;
+    </p>
+
+
+  </header>
+  <main id="principal">
+    <!-- LOGIN -->
+    <div class="container" id="formulario">
+      <form>
+        <div class="mb-3">
+          <label for="exampleInputUser1" class="form-label">Usuario:</label>
+          <input type="usuario" class="form-control" id="usuario">
+
+        </div>
+        <div class="mb-3">
+          <label for="exampleInputPassword1" class="form-label">Contraseña:</label>
+          <input type="password" class="form-control" id="contraseña">
+        </div>
+        <button type="submit" class="btn btn-primary" id="boton">Acceder</button>
+      </form>
+
+      <div id="enlaceReg">
+        <a href="./html/registro.html">Registro De Nuevo Usuario</a>
+      </div>
+
+    </div>
+
   </main>
 
-  <!-- LOGIN -->
-  <div class="container" id="formulario">
-    <form>
-      <div class="mb-3">
-        <label for="exampleInputUser1" class="form-label">Usuario:</label>
-        <input type="usuario" class="form-control" id="usuario">
-        
-      </div>
-      <div class="mb-3">
-        <label for="exampleInputPassword1" class="form-label">Contraseña:</label>
-        <input type="password" class="form-control" id="contraseña">
-      </div>
-      <button type="submit" class="btn btn-primary" id="boton">Acceder</button>
-    </form>
 
-    <div id="enlaceReg">
-      <a href="./html/registro.html">Registro De Nuevo Usuario</a>
-    </div>
-    
-  </div>
 
 
   <!-- VENTANA MODAL Y COOKIES -->

@@ -31,8 +31,30 @@
       style="display:none;visibility:hidden"></iframe></noscript>
   <!-- End Google Tag Manager (noscript) -->
 
+ <!-- BARRA DE NAVEGACION -->
 
-  <header id="mainHome">
+ <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <div class="container-fluid">
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarText">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="./html/registro.html">Registro</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="./html/contacto.html">Contacto</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+  <header class="mainHome">
     <!-- REPRODUCTOR MUSICA -->
 
     <audio id="intro" controls>
@@ -40,8 +62,11 @@
       <source src="./musicaintro.wav" type="audio/wav">
       Tu navegador no es compatible con el audio de la web
     </audio>
+  </header>
 
+ 
 
+  <main class="mainHome">
     <!-- PARTE ESCRITA Y LETRAS -->
     <p id="pPrincipal">
       Junio 2022
@@ -50,10 +75,9 @@
       </span>
       &mdash; Próximamente &mdash;
     </p>
+  </main>
 
-
-  </header>
-  <main id="principal">
+  <section>
     <!-- LOGIN -->
     <div class="container" id="formulario">
       <form>
@@ -68,10 +92,6 @@
         </div>
         <button type="submit" class="btn btn-primary" id="boton">Acceder</button>
       </form>
-
-      <div id="enlaceReg">
-        <a href="./html/registro.html">Nuevo Usuario</a>
-      </div>
 
     </div>
 

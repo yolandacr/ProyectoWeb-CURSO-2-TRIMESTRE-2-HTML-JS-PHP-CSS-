@@ -11,16 +11,16 @@ body {
   overflow: auto;
 }
 
-#mainHome{
+.mainHome{
   color: rgba(253, 158, 237, 0.801);
   text-align: center;
   margin-bottom: 10%;
 }
 
 #intro{
-margin:auto;
-margin-top:2%;
-height: 10vh;
+height: 3vh;
+margin-top: 3vh;
+background-color: #000;
 }
 
 #pPrincipal {
@@ -171,9 +171,6 @@ text-transform: uppercase;
   margin-bottom: 1%;
 }
 
-#enlaceReg{
-  margin-top: 8%;
-}
 
 
 @media only screen and (min-device-width : 270px) and (max-device-width : 480px)and (orientation: portrait) {

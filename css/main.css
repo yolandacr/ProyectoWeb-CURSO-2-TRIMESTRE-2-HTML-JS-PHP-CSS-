@@ -20,7 +20,7 @@ body {
 #intro{
 margin:auto;
 margin-top:2%;
-
+height: 10vh;
 }
 
 audio::-webkit-media-controls-play-button,
@@ -219,13 +219,13 @@ margin-left:40%;
   top:40%;
   font-size: 1rem;
   width:100%;
+  
 }
 
 #formulario{
   width:50%;
-  height:50%;
+  height:40vh;
   right: 25%;
-  font-size: 1rem;
   
 }
 

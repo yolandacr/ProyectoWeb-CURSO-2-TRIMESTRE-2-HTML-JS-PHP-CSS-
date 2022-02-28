@@ -19,9 +19,11 @@ body {
   margin-right:auto;
 }
 
-#intro{
+audio{
+width: 30vw;
 height: 3vh;
-margin-top: 3vh;
+margin-top: 2vh;
+align-self: center;
 }
 
 #pPrincipal {

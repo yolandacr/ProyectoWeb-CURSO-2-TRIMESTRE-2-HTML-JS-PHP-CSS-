@@ -223,15 +223,16 @@ text-transform: uppercase;
   
 }
 
-.mainHome{
-  top: 300vh;
+
+#pPrincipal{
+  margin-top: 5%;
 }
 
 #formulario{
   width:50%;
   height:20vh;
   right: 25%;
-  
+  margin-top: 8%;
 }
 
 .form-control{
@@ -240,5 +241,9 @@ text-transform: uppercase;
 
 .btn-primary {
   font-size: 0.2rem;
+}
+
+nav{
+  font-size: 1rem;
 }
 }

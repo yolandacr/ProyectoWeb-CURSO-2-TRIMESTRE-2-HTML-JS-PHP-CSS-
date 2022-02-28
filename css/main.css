@@ -156,7 +156,7 @@ align-self: center;
 .container{
 color:rgba(202, 95, 181, 0.911);
 top: 58%;
-position:relative;
+position:absolute;
 margin-left:40%; 
 text-transform: uppercase;
 
@@ -193,6 +193,7 @@ text-transform: uppercase;
     top:40%;
     font-size: 1.5rem;
     position:absolute;
+    z-index:-1;
   }
 
   #formulario{
@@ -220,8 +221,10 @@ text-transform: uppercase;
   top:40%;
   font-size: 0.5rem;
   width:100%;
+  z-index:-1;
   
 }
+
 
 
 #pPrincipal{

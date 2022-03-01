@@ -1,13 +1,19 @@
+*{
+  margin:0;
+  padding:0;
+  box-sizing: border-box;
+}
+
+html{
+  height: 100%;
+}
 body {
   font: 400 1em/1.5 "Neuton";
   background: #090d00;
   color:rgba(252, 252, 252, 0.788);
   text-align:center;
-  box-sizing: border-box;
-  height: 100vh;
-  width: 100vw;
-  margin:0;
-  padding:0;
+  min-height: 100vh;
+  width: 100%;
   overflow: auto;
 }
 
@@ -190,10 +196,14 @@ text-transform: uppercase;
 
  
   .container{
-    top:40%;
+    top:55%;
     font-size: 1.5rem;
     position:absolute;
     z-index:-1;
+  }
+
+  #pPrincipal{
+    margin-top: 20%;
   }
 
   #formulario{

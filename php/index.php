@@ -30,7 +30,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             // SI COINCIDEN AMBOS SE INICIA LA SESION CON LOS DATOS. SE CREA LA SESION.
             if (password_verify($clave, $result['clave'])) {
                 $_SESSION['nombre'] = $result['nombre'];
-                echo '<p class="error">Todo ok</p>';
+                header('Location: ../html/mantenimiento.html');
             } else {
                 echo '<p class="error">Fallo de autentificación</p>';
             }

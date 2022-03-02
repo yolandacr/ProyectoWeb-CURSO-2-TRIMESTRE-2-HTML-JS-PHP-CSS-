@@ -52,9 +52,12 @@ text-transform: uppercase;
   margin-bottom: 1%;
 }
 
-span{
+.error{
+  color:red;
   display:none;
 }
+
+
 
 @media only screen and (min-device-width : 270px) and (max-device-width : 480px)and (orientation: portrait) {
   body{

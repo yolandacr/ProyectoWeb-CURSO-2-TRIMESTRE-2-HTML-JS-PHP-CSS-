@@ -53,6 +53,7 @@ text-transform: uppercase;
 }
 
 .error{
+  font-size:0.5rem;
   color:red;
   display:none;
 }

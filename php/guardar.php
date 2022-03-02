@@ -1,9 +1,9 @@
 <?php
 //IMPORTS
 require 'database.php';
+require 'validacion.php';
 
-
-$nombre="";
+$usuario="";
 $clave="";
 
 //CODIGO A EJECUTAR AL MANDAR EL FORMULARIO
@@ -13,11 +13,11 @@ $clave="";
   if ($_SERVER["REQUEST_METHOD"] == "POST") {
       //SI EL FORMULARIO ES EL DE REGISTRO
      
-          $nombre=$_POST["nombre"];
+          $usuario=$_POST["nombre"];
           $clave=$_POST["clave"];
 
           
-          if ($nombre!=""&&$clave!="") {
+          if ($usuario!=""&&$clave!="") {
           //GENERA EL HASH
           $hash_clave = password_hash($clave, PASSWORD_DEFAULT);
 
@@ -26,13 +26,11 @@ $clave="";
           $stmt = $dbh -> prepare("INSERT INTO usuario(nombre, clave)
           VALUES (:nombre, :clave)");
           // Hacemos el bind y la ejecutamos
-          if ($stmt -> execute(array(':nombre'=>$nombre, ':clave'=>$hash_clave))) {
+          if ($stmt -> execute(array(':nombre'=>$usuario, ':clave'=>$hash_clave))) {
               
           }
-          echo'<script type="text/javascript">
-          alert("Usuario registrado con éxito");
-          window.location.href="../index.html";
-          </script>';
+          //REDIRECCIONAMIENTO
+          header("location:../index.html");
         }
   }
 

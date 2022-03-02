@@ -80,17 +80,17 @@
   <section>
     <!-- LOGIN -->
     <div class="container" id="formulario">
-      <form>
+      <form action="./php/index.php" method="POST" name="login">
         <div class="mb-3">
           <label for="usuario" class="form-label">Usuario:</label>
-          <input type="usuario" class="form-control" id="usuario">
+          <input type="text" class="form-control" name="nombre">
 
         </div>
         <div class="mb-3">
           <label for="pass" class="form-label">Contraseña:</label>
-          <input type="pass" class="form-control" id="contraseña">
+          <input type="password" class="form-control" name="clave">
         </div>
-        <button type="submit" class="btn btn-primary" id="boton">Acceder</button>
+        <button type="submit" class="btn btn-primary">Acceder</button>
       </form>
 
     </div>

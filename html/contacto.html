@@ -49,14 +49,14 @@
             <div class="mb-3">
                 <label for="nombre" class="form-label">Nombre:</label>
                 <input type="text" class="form-control" id="nombre" name="nombre">
-                <span class="error" name="errorUsuario" id="nombre">*El nombre no puede estar vacío</span>
+                <span class="error"  id="errorUsuario">*El nombre no puede estar vacío</span>
                 
                  </div>
 
                 <div class="mb-3">
-                    <label for="inputPassword" class="form-label">Correo electrónico:</label>
+                    <label for="email" class="form-label">Correo electrónico:</label>
                     <input type="email" class="form-control" id="email" name="email">
-                    <span class= "error" name="errorPass" id="password">*El email es incorrecto</span>
+                    <span class= "error"  id="errorEmail">*El email es incorrecto</span>
                 </div>
 
             
@@ -69,6 +69,7 @@
             <button type="submit" class="btn btn-primary">Enviar</button>
       
         </form>
+        </div>
     </main>
     
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"

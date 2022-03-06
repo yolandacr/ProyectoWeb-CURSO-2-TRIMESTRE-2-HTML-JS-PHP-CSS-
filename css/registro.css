@@ -61,12 +61,15 @@ text-transform: uppercase;
 @media only screen and (min-device-width : 270px) and (max-device-width : 480px)and (orientation: portrait) {
   body{
        font-size: 0.55rem;
+       overflow: auto;
+       overflow-y: scroll;
        overflow-x: hidden;
    }
 
    .container{
      top:40%;
      font-size: 1.5rem;
+
    }
  
    #formulario{
@@ -76,14 +79,11 @@ text-transform: uppercase;
      margin-left:auto;
      margin-right:auto;
      top:50%;
+     
  
    }
    .navbar{
     font-size: 1.5rem;
-  }
-
-  #titulo{
-    z-index: -1;
   }
   
  }
@@ -92,8 +92,10 @@ text-transform: uppercase;
  @media only screen and (min-device-width: 300px) and (max-device-width: 1024px) and (orientation: landscape) {
    body{
      font-size: 0.3rem;
-     overflow-y:visible;
+     overflow: auto;
+     overflow-y: scroll;
      overflow-x: hidden;
+    
  }
  
  
@@ -101,6 +103,8 @@ text-transform: uppercase;
    top:40%;
    font-size: 1rem;
    width:100%;
+  
+ 
  }
  
  #formulario{

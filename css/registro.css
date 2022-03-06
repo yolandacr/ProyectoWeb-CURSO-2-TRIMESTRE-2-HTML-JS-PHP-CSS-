@@ -61,6 +61,7 @@ text-transform: uppercase;
 @media only screen and (min-device-width : 270px) and (max-device-width : 480px)and (orientation: portrait) {
   body{
        font-size: 0.55rem;
+       overflow-x: hidden;
    }
 
    .container{
@@ -93,6 +94,7 @@ text-transform: uppercase;
      font-size: 0.3rem;
      overflow: auto;
      scroll-behavior: auto;
+     overflow-x: hidden;
  }
  
  

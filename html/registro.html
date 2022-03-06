@@ -31,8 +31,8 @@
           <li class="nav-item">
             <strong><u><a class="nav-link">REGISTRO</a></u></strong>
           </li>
-          <li>
           <a class="nav-link" href="contacto.html">CONTACTO</a>
+            
           </li>
         </ul>
       </div>
@@ -48,19 +48,19 @@
         <div class="container" id="formulario">
             <form action="../php/guardar.php" method="POST" name="registro" id="registro">
             <div class="mb-3">
-                <label for="usuario" class="form-label">Usuario:</label>
-                <input type="text" class="form-control" id="usuario" name="nombre">
-                <span class="error"  id="nombre">*El usuario no es válido</span>
+                <label for="nombre" class="form-label">Usuario:</label>
+                <input type="text" class="form-control" name="nombre">
+                <span class="error" name="errorNombre" id="nombre">*El usuario no es válido</span>
                 
                  </div>
 
                 <div class="mb-3">
                     <label for="pass" class="form-label">Contraseña:</label>
-                    <input type="password" class="form-control" id="pass" name="clave">
-                    <span class= "error"  id="clave">*La contraseña no es válida</span>
+                    <input type="password" class="form-control" name="clave">
+                    <span class= "error" name="errorPass" id="clave">*La contraseña no es válida</span>
                 </div>
                     
-            <button type="submit" class="btn btn-primary" id="boton" name="boton">Registrar</button>
+            <button type="submit" class="btn btn-primary" id="boton" name="boton" disabled="true">Registrar</button>
              
         </form>
     </div>

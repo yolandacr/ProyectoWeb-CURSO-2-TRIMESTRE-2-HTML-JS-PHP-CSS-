@@ -23,17 +23,54 @@ $clave="";
 
 
           // Preparamos la sentencia
-          $stmt = $dbh -> prepare("INSERT INTO usuario(nombre, clave)
-          VALUES (:nombre, :clave)");
-          // Hacemos el bind y la ejecutamos
-          if ($stmt -> execute(array(':nombre'=>$nombre, ':clave'=>$hash_clave))) {
-              
-          }
+         
+            $pStatementComprobarUsuario = $dbh->prepare("SELECT * FROM usuario WHERE nombre = :nombre LIMIT 1;");
+
+            $success = $pStatementComprobarUsuario->execute([
+                ":nombre" => $nombre
+            ]);
+            $rowCount = $pStatementComprobarUsuario->rowCount();
+    
+            if ($success && $rowCount == 1) {
+              echo'<script type="text/javascript">
+              alert("El nombre de usuario ya existe");
+              window.location.href="../html/registro.html";
+              </script>';
+            }else{
+              $pStatementRegistrar = $dbh->prepare("INSERT INTO usuario (nombre, clave) VALUES (:nombre, :clave)");
+              $success = $pStatementRegistrar->execute([
+                  ":nombre" => $nombre,
+                  ":clave" => password_hash($clave, PASSWORD_DEFAULT)
+              ]);
+
+              echo'<script type="text/javascript">
+              alert("Usuario registrado con éxito");
+              window.location.href="../index.html";
+              </script>';
+
+            }
+    }
+
+    /**
+     * Funcion para comprobar si el usuario que se va a registrar ya existe.
+     */
+         function comprobarUsuario()
+    {
+        $pStatementComprobarUsuario = $dbh->prepare("SELECT * FROM usuario WHERE nombre = :nombre LIMIT 1;");
+
+        $success = $pStatementComprobarUsuario->execute([
+            ":nombre" => $this->nombre
+        ]);
+        $rowCount = $pStatementComprobarUsuario->rowCount();
+
+        if ($success && $rowCount == 1) {
           echo'<script type="text/javascript">
-          alert("Usuario registrado con éxito");
-          window.location.href="../index.html";
+          alert("El nombre de usuario ya existe");
           </script>';
         }
-  }
+    }
+          
+        }
+  
 
 ?>

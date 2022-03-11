@@ -51,6 +51,10 @@ text-transform: uppercase;
   display:none;
 }
 
+#text{
+  resize:none;
+}
+
 
 
 @media only screen and (min-device-width : 270px) and (max-device-width : 480px)and (orientation: portrait) {
@@ -118,4 +122,6 @@ text-transform: uppercase;
 .btn-primary {
   margin-bottom: 5%;
 }
+
+
  }
